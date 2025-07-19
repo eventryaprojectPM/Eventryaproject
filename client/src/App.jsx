@@ -1,17 +1,23 @@
-import React from 'react'
-import Navbar from './Components/Navbar'
-import { Route, Routes } from 'react-router-dom'
+import React from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
-import Movies from './pages/Movies'
-import MovieDetails from './pages/MovieDetails'
-import SeatLayout from './pages/SeatLayout'
-import MyBookings from './pages/MyBookings'
+import Movies from "./pages/Movies";
+import MovieDetails from "./pages/MovieDetails";
+import SeatLayout from "./pages/SeatLayout";
+import MyBookings from "./pages/MyBookings";
 import Favorite from "./pages/Favorite";
+import Navbar from "./Components/Navbar";
+import { Toaster } from "react-hot-toast";
+import Footer from "./Components/Footer";
 
 const App = () => {
+  const location = useLocation();
+  const isAdminRoute = location.pathname.startsWith("/admin");
+
   return (
     <>
-      <Navbar />
+      <Toaster />
+      {!isAdminRoute && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/movies" element={<Movies />} />
@@ -20,8 +26,9 @@ const App = () => {
         <Route path="/my-bookings" element={<MyBookings />} />
         <Route path="/favorite" element={<Favorite />} />
       </Routes>
+      {!isAdminRoute && <Footer />}
     </>
   );
-}
+};
 
-export default App
+export default App;
