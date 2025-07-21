@@ -10,6 +10,7 @@ import Navbar from "./Components/Navbar";
 import { Toaster } from "react-hot-toast";
 import Footer from "./Components/Footer";
 
+
 const App = () => {
   const location = useLocation();
   const isAdminRoute = location.pathname.startsWith("/admin");
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/movies/:id/:date" element={<SeatLayout />} />
         <Route path="/my-bookings" element={<MyBookings />} />
         <Route path="/favorite" element={<Favorite />} />
+
       </Routes>
       {!isAdminRoute && <Footer />}
     </>
