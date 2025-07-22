@@ -9,7 +9,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 const SeatLayout = () => {
 
-  groupRows[0].map(row => renderSeats(row))
+  const groupRows = [["A", "B"], ["c", "D"], ["E", "F"], ["G", "H"], ["I", "J"]];
 
 
 
