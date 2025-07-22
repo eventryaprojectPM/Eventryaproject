@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
 import BlurCircle from "../Components/BlurCircle";
-import { assets, dummyDateTimeData, dummyShowsData } from '../assets/assets';
-import Loading from '../components/Loading';
-import { ClockIcon } from 'lucide-react';
-import isoTimeFormat from '../lib/isoTimeFormat';
-import toast from 'react-hot-toast';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams, useNavigate } from "react-router-dom";
+import { dummyShowsData, dummyDateTimeData } from "../assets/assets";
+import { ClockIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
+
 
 const SeatLayout = () => {
 
