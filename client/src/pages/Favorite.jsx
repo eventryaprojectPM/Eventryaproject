@@ -9,7 +9,7 @@ const Favorite = () => {
       <BlurCircle top="150px" left="0px"/>
       <BlurCircle bottom="50px" right="50px"/>
 
-      <h1 className='text-lg font-medium my-4'>Now Showing</h1>
+      <h1 className='text-lg font-medium my-4'>Your Favorite Events</h1>
       <div className='flex flex-wrap max-sm:justify-center gap-10'>
         {dummyShowsData.map((movie) => (
           <MovieCard movie={movie} key={movie._id} />

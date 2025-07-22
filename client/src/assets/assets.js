@@ -129,7 +129,7 @@ export const dummyShowsData = [
     overview:
       "A queen sends the powerful and feared sorceress Gray Alys to the ghostly wilderness of the Lost Lands in search of a magical power, where she and her guide, the drifter Boyce, must outwit and outfight both man and demon.",
     poster_path:
-      "https://image.tmdb.org/t/p/original/dDlfjR7gllmr8HTeN6rfrYhTdwX.jpg",
+      "https://motacolombo.lk/wp-content/uploads/2023/01/padura/8-768x512.jpg",
     backdrop_path: "/images/padura.jpg",
     genres: [
       { id: 28, name: "Action" },
@@ -193,7 +193,7 @@ export const dummyShowsData = [
     overview:
       "When a drug heist swerves lethally out of control, a jaded cop fights his way through a corrupt city's criminal underworld to save a politician's son.",
     poster_path:
-      "https://image.tmdb.org/t/p/original/ubP2OsF3GlfqYPvXyLw9d78djGX.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHDPi0IYjZJbBfqwBqCqv_-QzyyfntbdSrDA&s",
     backdrop_path: "/images/kanimadala.jpg",
     genres: [
       { id: 28, name: "Action" },
@@ -231,6 +231,31 @@ export const dummyShowsData = [
     vote_average: 6.516,
     vote_count: 15225,
     runtime: 101,
+  },
+  {
+    _id: "668490",
+    id: 668490,
+    title: "Raja Man Wahala",
+    overview:
+      "Set in a time of political unrest, 'Raja Man Wahala' follows the journey of a humble villager who dares to defy royal injustice and inspire a movement for freedom. A story of resistance, sacrifice, and courage.",
+    poster_path:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB69M97uig0LtHZR37cCCEtjHk_m2P6ADznA&s",
+    backdrop_path: "/images/raja.jpg",
+    genres: [
+  { id: 18, name: "Drama" },
+  { id: 36, name: "History" },
+  { id: 10752, name: "War" },       // If political/historical background
+  { id: 99, name: "Documentary" },  // If real-based
+  { id: 35, name: "Comedy" },       // If satirical or stage-play
+],
+
+    casts: dummyCastsData,
+    release_date: "2025-04-25",
+    original_language: "en",
+    tagline: "No law. Only disorder.",
+    vote_average: 6.537,
+    vote_count: 35960,
+    runtime: 107,
   },
   {
     _id: "575265",
@@ -278,6 +303,7 @@ export const dummyShowsData = [
     vote_count: 23569,
     runtime: 127,
   },
+  
 ];
 
 export const dummyDateTimeData = {
