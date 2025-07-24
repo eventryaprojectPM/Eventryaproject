@@ -3,9 +3,9 @@ import BlurCircle from "../Components/BlurCircle";
 import { useParams, useNavigate } from "react-router-dom";
 import { dummyShowsData, dummyDateTimeData, assets } from "../assets/assets";
 import { ClockIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
-
-
+import Loading from '../Components/Loading';
 import isoTimeFormat from "../lib/isoTimeFormat";
+import { toast } from "react-hot-toast"; // Make sure you import toast
 
 const SeatLayout = () => {
   const groupRows = [["A", "B"], ["C", "D"], ["E", "F"], ["G", "H"], ["I", "J"]];
@@ -16,65 +16,62 @@ const SeatLayout = () => {
 
   const navigate = useNavigate();
 
-  const getShow = async () => {
-    const foundShow = dummyShowsData.find((show) => show.id === id);
-    if (foundShow) {
-      setShow({
-        movie: foundShow,
-        dateTime: dummyDateTimeData,
-      });
-    }
-  };
+ useEffect(() => {
+  const foundShow = dummyShowsData.find((show) => show.id === parseInt(id));
+  if (foundShow) {
+    const dateTimes = dummyDateTimeData[date] || [];
+    const filteredDateTimes = dateTimes.filter(
+      (dt) => Number(dt.showId) === foundShow.id
+    );
+    setShow({
+      movie: foundShow,
+      dateTime: filteredDateTimes,
+    });
+  }
+}, [id, date]);
+
+
 
   const handleSeatClick = (seatId) => {
-    if (!selectedTime) {
-      return toast("Please select time first");
-    }
-
+    if (!selectedTime) return toast("Please select time first");
     if (!selectedSeats.includes(seatId) && selectedSeats.length >= 5) {
       return toast("You can only select up to 5 seats");
     }
-
     setSelectedSeats((prev) =>
       prev.includes(seatId)
         ? prev.filter((seat) => seat !== seatId)
         : [...prev, seatId]
     );
   };
+
   const renderSeats = (row, count = 9) => (
     <div key={row} className="flex gap-2 mt-2">
-      <div className="flex flex-wrap items-center justify-center gap-2">
-        {Array.from({ length: count }, (_, i) => {
-          const seatId = `${row}${i + 1}`;
-          return (
-            <button
-              key={seatId}
-              onClick={() => handleSeatClick(seatId)}
-              className={`w-8 h-8 rounded border border-primary/60 cursor-pointer ${
-                selectedSeats.includes(seatId) ? "bg-primary text-white" : ""
-              }`}
-            >
-              {seatId}
-            </button>
-          );
-        })}
-      </div>
+      {Array.from({ length: count }, (_, i) => {
+        const seatId = `${row}${i + 1}`;
+        return (
+          <button
+            key={seatId}
+            onClick={() => handleSeatClick(seatId)}
+            className={`w-8 h-8 rounded border border-primary/60 cursor-pointer ${
+              selectedSeats.includes(seatId) ? "bg-primary text-white" : ""
+            }`}
+          >
+            {seatId}
+          </button>
+        );
+      })}
     </div>
   );
-
-  useEffect(() => {
-    getShow();
-  }, []);
 
   if (!show) return <Loading />;
 
   return (
     <div className="flex flex-col md:flex-row px-6 md:px-16 lg:px-40 py-30 md:pt-50">
-      {/* Available Timing */}
+      {/* Timing */}
       <div className="w-60 bg-primary/10 border border-primary/20 rounded-lg py-10 h-max md:sticky md:top-30">
         <p className="text-lg font-semibold px-6">Available Timing</p>
         <div className="mt-5 space-y-1">
-          {show.dateTime[date]?.map((item) => (
+          {show.dateTime?.map((item) => (
             <div
               key={item.time}
               onClick={() => setSelectedTime(item)}
@@ -91,7 +88,7 @@ const SeatLayout = () => {
         </div>
       </div>
 
-      {/* Seat Layout */}
+      {/* Seats */}
       <div className="relative flex-1 flex flex-col items-center md:mt-16">
         <BlurCircle top="100px" left="100px" />
         <BlurCircle bottom="0" right="0" />

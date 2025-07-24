@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import timeFormat from '../lib/timeFormat';
 import { dateFormat } from '../lib/dateFormt';
 import { dummyBookingData } from '../assets/assets';
-
+import Loading from '../Components/Loading';
 import BlurCircle from "../Components/BlurCircle";
 const MyBookings = () => {
   const currency=import.meta.env.VITE_CURRENCY 
@@ -57,8 +57,7 @@ const MyBookings = () => {
 
   ):<Loading/>
  
-  }
-
+}
   
 
 
