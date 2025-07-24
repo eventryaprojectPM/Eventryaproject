@@ -35,89 +35,79 @@ export const dummyTrailers = [
 
 const dummyCastsData = [
   {
-    name: "Milla Jovovich",
+    name: "Piyath Rajapaksha",
     profile_path:
-      "https://image.tmdb.org/t/p/original/usWnHCzbADijULREZYSJ0qfM00y.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSITdMhJThxmS_t3rAipTxve-FmdeTJHJsK9w&s",
   },
   {
-    name: "Dave Bautista",
+    name: "Yashodha medagedara",
     profile_path:
-      "https://image.tmdb.org/t/p/original/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMufrCVgHwGjfxKk70WTXHQBVzh3ndSYhKJg&s",
   },
   {
-    name: "Arly Jover",
+    name: "Supun Perera",
     profile_path:
-      "https://image.tmdb.org/t/p/original/zmznPrQ9GSZwcOIUT0c3GyETwrP.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmeIHyHyUCPlbPKMSAT69B3xqBTb3ukz4ULg&s",
   },
   {
-    name: "Amara Okereke",
+    name: "Adithya Weliwatta",
     profile_path:
-      "https://image.tmdb.org/t/p/original/nTSPtzWu6deZTJtWXHUpACVznY4.jpg",
+      "https://yt3.googleusercontent.com/Z7_99ADdH1ZqaUo6jjRa3i4W89cxgHMSP0daSKorSIdW_9vgZu11QVpwzcgs8k-I9ozDWKOiNSo=s900-c-k-c0x00ffffff-no-rj",
   },
   {
-    name: "Fraser James",
+    name: "Yasas Medagedara",
     profile_path:
-      "https://image.tmdb.org/t/p/original/mGAPQG2OKTgdKFkp9YpvCSqcbgY.jpg",
+      "https://yt3.googleusercontent.com/duzDd0Tn1IAMynR6HohzS-UrSVX-OHYz6SUKUpfRRp7Pl7wdv9GQl1XlZbJfT74SO26cyXJ54g=s900-c-k-c0x00ffffff-no-rj",
   },
   {
-    name: "Deirdre Mullins",
+    name: "Shashika Nisansala",
     profile_path:
-      "https://image.tmdb.org/t/p/original/lJm89neuiVlYISEqNpGZA5kTAnP.jpg",
+      "https://i1.sndcdn.com/artworks-000546693393-dvof39-t500x500.jpg",
   },
   {
-    name: "Sebastian Stankiewicz",
+    name: "Bathiya Jayakody",
     profile_path:
-      "https://image.tmdb.org/t/p/original/hLN0Ca09KwQOFLZLPIEzgTIbqqg.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5NpdI5Hv4UihutiN0oez68HMTtxST9Kye-Q&s",
   },
   {
-    name: "Tue Lunding",
+    name: "Umaria Sinhawansa",
     profile_path:
-      "https://image.tmdb.org/t/p/original/qY4W0zfGBYzlCyCC0QDJS1Muoa0.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPUPNQmKrhzPbmUiBScgA-dEcYCTUhQkfYR-eeGFDmekvBmJTUfjfnEY3XARkNS6nPi7g&usqp=CAU",
   },
   {
-    name: "Jacek Dzisiewicz",
+    name: "Athma Liyanage",
     profile_path:
-      "https://image.tmdb.org/t/p/original/6Ksb8ANhhoWWGnlM6O1qrySd7e1.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW4VtCsWf7Lf5H8haaK4WFBvVX--oNhvd3kw&s",
   },
   {
-    name: "Ian Hanmore",
+    name: "Nirosha Virajini",
     profile_path:
-      "https://image.tmdb.org/t/p/original/yhI4MK5atavKBD9wiJtaO1say1p.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5LHOZY4KhKktyywzOYyuG4BlhQhQxH4FRAQ&s",
   },
   {
-    name: "Eveline Hall",
+    name: "Samitha Mudunkotuwa",
     profile_path:
-      "https://image.tmdb.org/t/p/original/uPq4xUPiJIMW5rXF9AT0GrRqgJY.jpg",
+      "https://yt3.googleusercontent.com/kKvELo2durrEQDsnSlBmaO-Mr1sHRfR4LEJcFqSqjRn__qo9rWkou_uY0-nLFiDmjT18zxQVTQ=s900-c-k-c0x00ffffff-no-rj",
   },
   {
-    name: "Kamila Klamut",
+    name: "Ruwan Hettiarachchi",
     profile_path:
-      "https://image.tmdb.org/t/p/original/usWnHCzbADijULREZYSJ0qfM00y.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgRCQeSgb2TjE1PqqD9qESkwsHQOWisPEV7A&s",
   },
   {
-    name: "Caoilinn Springall",
+    name: "Windy Goonatillake",
     profile_path:
-      "https://image.tmdb.org/t/p/original/uZNtbPHowlBYo74U1qlTaRlrdiY.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLjCbuEzav0nCmxGu2z_NGL6RU12SCwRy9eg&s",
   },
   {
-    name: "Jan Kowalewski",
+    name: "Kasun Kalhara",
     profile_path:
-      "https://image.tmdb.org/t/p/original/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg",
+      "https://i.scdn.co/image/ab6761610000e5eb59fbda6de903c584116aa5bd",
   },
   {
-    name: "Pawel Wysocki",
+    name: "Ashanthi De Alwis",
     profile_path:
-      "https://image.tmdb.org/t/p/original/zmznPrQ9GSZwcOIUT0c3GyETwrP.jpg",
-  },
-  {
-    name: "Simon Lööf",
-    profile_path:
-      "https://image.tmdb.org/t/p/original/cbZrB8crWlLEDjVUoak8Liak6s.jpg",
-  },
-  {
-    name: "Tomasz Cymerman",
-    profile_path:
-      "https://image.tmdb.org/t/p/original/nTSPtzWu6deZTJtWXHUpACVznY4.jpg",
+      "https://www.sundaytimes.lk/201011/uploads/Ashanthi.jpg",
   },
 ];
 
