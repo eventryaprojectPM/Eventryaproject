@@ -33,7 +33,7 @@ const DateSelect = ({ dateTime, id }) => {
                   className={`flex flex-col items-center justify-center h-14 w-14 aspect-square rounded cursor-pointer ${Selected === date ? 'bg-primary text-white' : 'border border-primary/70'}`}
                 >
                   <span>{new Date(date).getDate()}</span>
-                  <span>{new Date(date).toLocaleDateString("en-us", { month: 'short' })}</span>
+                  <span>{new Date(date).toLocaleDateString("en-US", { month: 'short' })}</span>
                 </button>
               ))}
             </div>
