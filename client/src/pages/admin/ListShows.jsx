@@ -1,23 +1,24 @@
-import React, { useEffect, useState } from 'react';
-import dummyShowData from '../../../lib/dummyShowData'; // ✅ Make sure this file exists and is correct
-import { format } from 'date-fns'; // ✅ Install with: npm install date-fns
+import React, { useEffect, useState } from "react";
+import { dummyShowsData } from "../../assets/assets";
+import Title from "../../Components/admin/Title";
+import Loading from "../../Components/Loading";
+import { dateFormat } from "../../lib/dateFormat";
 
 const ListShows = () => {
   const currency = import.meta.env.VITE_CURRENCY;
-  const [shows, setShows] = useState([]);
-  const [loading, setLoading] = useState(true); // ✅ Fixed typo
-
+  const [shows, setshows] = useState([]);
+  const [loading, setLoading] = useState(true);
   const getAllShows = async () => {
     try {
-      setShows([
+      setshows([
         {
-          movie: dummyShowData[0],
-          showDateTime: "2025-06-30T02:30:00.000Z", // ✅ Fixed typo from showdateTime
+          movie: dummyShowsData[0],
+          sh0wDateTime: "2025-06-30T02:30:00.000z",
           showPrice: 59,
           occupiedSeats: {
-            A1: "USER_1",
-            B1: "USER_2",
-            C1: "USER_3",
+            A1: "user_1",
+            B1: "user_2",
+            C1: "user_3",
           },
         },
       ]);
@@ -26,25 +27,21 @@ const ListShows = () => {
       console.error(error);
     }
   };
-
   useEffect(() => {
     getAllShows();
   }, []);
 
-  const dateFormat = (dateStr) => format(new Date(dateStr), 'yyyy-MM-dd HH:mm');
-
   return !loading ? (
     <>
-      <h1 className="text-2xl font-bold mb-4">List Shows</h1>
-
-      <div className="max-w-4xl mt-6 overflow-x-auto">
+      <Title text1="List" text2="Events" />
+      <div className="max-w-4xl mt-6 overflow-auto">
         <table className="w-full border-collapse rounded-md overflow-hidden text-nowrap">
           <thead>
             <tr className="bg-primary/20 text-left text-white">
-              <th className="p-2 font-medium pl-5">Movie Name</th>
-              <th className="p-2 font-medium">Show Time</th>
-              <th className="p-2 font-medium">Total Bookings</th>
-              <th className="p-2 font-medium">Earnings</th>
+              <th className="py-2 font-medium pl-5">Event Name</th>
+              <th className="py-2 font-medium"> Time</th>
+              <th className="py-2 font-medium">Total Bookings</th>
+              <th className="py-2 font-medium">Earings</th>
             </tr>
           </thead>
           <tbody className="text-sm font-light">
@@ -53,11 +50,13 @@ const ListShows = () => {
                 key={index}
                 className="border-b border-primary/10 bg-primary/5 even:bg-primary/10"
               >
-                <td className="p-2 min-w-45 pl-5">{show.movie.title}</td>
-                <td className="p-2">{dateFormat(show.showDateTime)}</td>
-                <td className="p-2">{Object.keys(show.occupiedSeats).length}</td>
-                <td className="p-2">
-                  {currency}{" "}
+                <td className="py-2 min-w-45 pl-5">{show.movie.title}</td>
+                <td className="py-2 ">{dateFormat(show.showDateTime)}</td>
+                <td className="py-2">
+                  {Object.keys(show.occupiedSeats).length}
+                </td>
+                <td className="py-2">
+                  {currency}
                   {Object.keys(show.occupiedSeats).length * show.showPrice}
                 </td>
               </tr>
@@ -67,7 +66,7 @@ const ListShows = () => {
       </div>
     </>
   ) : (
-    <p>Loading...</p> // ✅ Replaced <loading />
+    <Loading />
   );
 };
 

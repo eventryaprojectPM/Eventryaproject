@@ -40,7 +40,7 @@ const App = () => {
       </Routes>
       {!isAdminRoute && <Footer />}
     </>
-  );
-};
+  )
+}
 
 export default App;
