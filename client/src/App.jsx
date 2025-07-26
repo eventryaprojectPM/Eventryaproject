@@ -13,7 +13,7 @@ import Dashboard from "./pages/admin/Dashboard";
 import ListShows from "./pages/admin/ListShows";
 import AddShows from "./pages/admin/AddShows";
 import Layout from "./pages/admin/Layout";
-import ListBooking from "./pages/admin/ListBooking";
+import ListBookings from "./pages/admin/ListBookings";
 
 const App = () => {
   const location = useLocation();
@@ -30,17 +30,17 @@ const App = () => {
         <Route path="/movies/:id/:date" element={<SeatLayout />} />
         <Route path="/my-bookings" element={<MyBookings />} />
         <Route path="/favorite" element={<Favorite />} />
-        <Route path="/admin/*" element={<Layout/>}>
-        <Route index element ={<Dashboard/>}/>
-        <Route path="add-shows" element ={<AddShows/>}/>
-        <Route path="list-shows" element ={<ListShows/>}/>
-        <Route path="list-booking" element ={<ListBooking/>}/>
-
+        <Route path="/admin/*" element={<Layout />}>
+          <Route index element={<Dashboard />} />{" "}
+          {/*same route eke  dekam nisa */}
+          <Route path="add-shows" element={<AddShows />} />
+          <Route path="list-shows" element={<ListShows />} />
+          <Route path="list-bookings" element={<ListBookings />} />
         </Route>
       </Routes>
       {!isAdminRoute && <Footer />}
     </>
-  )
+  );
 }
 
 export default App;
