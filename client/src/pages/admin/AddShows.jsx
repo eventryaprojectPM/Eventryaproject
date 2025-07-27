@@ -3,7 +3,7 @@ import { dummyShowsData } from "../../assets/assets";
 import Loading from "../../Components/Loading";
 import Title from "../../Components/admin/Title";
 import { CheckIcon, DeleteIcon, StarIcon } from "lucide-react";
-import { kConverter } from "../../lib/kConverter";
+import { kConverter } from "../../lib/kconverter";
 
 const AddShows = () => {
   const currency = import.meta.env.VITE_CURRENCY;
