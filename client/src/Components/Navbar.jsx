@@ -50,7 +50,7 @@ const Navbar = () => {
           }}
           to="/"
         >
-          Teaters
+          FeadBack
         </Link>
         <Link
           onClick={() => {
@@ -59,7 +59,7 @@ const Navbar = () => {
           }}
           to="/"
         >
-          Releases
+          Contact
         </Link>
         <Link
           onClick={() => {
