@@ -50,7 +50,7 @@ const Navbar = () => {
           }}
           to="/"
         >
-          FeadBack
+          FeedBack
         </Link>
         <Link
           onClick={() => {
