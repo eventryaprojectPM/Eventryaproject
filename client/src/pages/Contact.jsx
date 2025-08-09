@@ -52,7 +52,7 @@ const Contact = () => {
         </form>
       </div>
 
-      {/* Optional Google Map */}
+      
       <div className="mt-12 max-w-4xl mx-auto">
         <iframe
           title="Google Map"

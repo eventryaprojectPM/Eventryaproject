@@ -108,7 +108,7 @@ const App = () => {
           </p>
         </div>
 
-        {/* 🔻 FEEDBACK MARQUEE SECTION */}
+        
         <div className="mt-12 max-w-5xl mx-auto">
           <div className="marquee-row w-full overflow-hidden relative">
             <div className="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r from-black to-transparent"></div>

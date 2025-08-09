@@ -7,7 +7,7 @@ import SeatLayout from "./pages/SeatLayout";
 import MyBookings from "./pages/MyBookings";
 import Favorite from "./pages/Favorite";
 import FeadBack from "./pages/FeedBack";
-import Contact from "./pages/Contact"; // ✅ Correct import
+import Contact from "./pages/Contact"; 
 
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
