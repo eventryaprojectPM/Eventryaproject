@@ -13,7 +13,8 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 z-50 w-full flex items-center justify-between px-6 md:px-16 lg:px-36 py-5">
       <Link to="/" className="max-md:flex-1">
-        <img src={assets.logo} alt="" className="w-36 h-auto" />
+        <img src={assets.logo} alt="" className="w-20 h-20 object-cover rounded-full border-2 border-white shadow-md" />
+
       </Link>
 
       <div
@@ -48,7 +49,7 @@ const Navbar = () => {
             scrollTo(0, 0);
             setIsOpen(false);
           }}
-          to="/"
+          to="/FeedBack"
         >
           FeedBack
         </Link>
@@ -57,7 +58,7 @@ const Navbar = () => {
             scrollTo(0, 0);
             setIsOpen(false);
           }}
-          to="/"
+          to="/Contact"
         >
           Contact
         </Link>
