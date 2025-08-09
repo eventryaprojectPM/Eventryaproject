@@ -4,8 +4,10 @@ import Loading from "../../Components/Loading";
 import Title from "../../Components/admin/Title";
 import { CheckIcon, DeleteIcon, StarIcon } from "lucide-react";
 import { kConverter } from "../../lib/kconverter";
+import { useAppContext } from "../../context/AppContext";
 
 const AddShows = () => {
+  const {axios, getToken, user}= useAppContext()
   const currency = import.meta.env.VITE_CURRENCY;
   const [nowPlayingMovies, setNowPlayingMovies] = useState([]);
   const [selectedMovies, setSelectedMovies] = useState(null);
@@ -14,7 +16,18 @@ const AddShows = () => {
   const [showPrice, setShowPrice] = useState("");
 
   const fetchNowPlayingMovies = async () => {
-    setNowPlayingMovies(dummyShowsData);
+    try {
+      const { data } = await axios.get('/api/show/now-playing', {
+        headers: { Authorization: `Bearer ${await getToken()}`}
+      })
+      if (data.success) {
+        setNowPlayingMovies(data.movies)
+      }
+      
+    } catch (error) {
+      console.error('Error fetching movies:', error)
+    }
+    
   };
   const handleDateTimeAdd = () => {
     if (!dateTimeInput) return;
@@ -57,7 +70,7 @@ const AddShows = () => {
             <div
               key={movie._id}
               className="relative max-w-40 cursor-pointer group-hover:not-hover:opacity-40 hover:-translate-y-1 transition duration-300"
-              onClick={() => setSelectedMovies(movie.id)}
+              onClick={() => setSelectedMovies(movie._id)}
             >
               <div className="relative rounded-lg overflow-hidden">
                 <img
