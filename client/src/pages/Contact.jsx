@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import BlurCircle from '../Components/BlurCircle'
 
 // ChatBot component
 const ChatBot = () => {
@@ -164,13 +165,14 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white relative">
       {/* Hero Section */}
+
       <div className="relative h-[60vh] min-h-[400px] w-full overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: "url('/contact.jpg')",
             filter: "blur(1px)",
-            transform: "scale(1.1)"
+            transform: "scale(1.1)",
           }}
         >
           <div className="absolute inset-0 bg-black/50"></div>
@@ -184,8 +186,8 @@ const Contact = () => {
             <div className="space-y-4 text-lg md:text-xl">
               <p>
                 Whether you have queries, feedback, or just want to say hello,
-                our team is committed to assist you. Reach out to us effortlessly
-                through our Hotline.
+                our team is committed to assist you. Reach out to us
+                effortlessly through our Hotline.
               </p>
             </div>
           </div>
@@ -193,99 +195,103 @@ const Contact = () => {
       </div>
 
       {/* How we can help Section */}
-      <div className="py-16 px-6 md:px-16 lg:px-36 bg-white/5">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold color-blue mb-8">
-            Hey! Tell us how we can help you?
-          </h2>
-          <div className="px-4 md:px-8">
-            <p className="text-lg md:text-xl leading-relaxed">
-              Our unwavering commitment to customer satisfaction is at the core
-              of our operations. We take immense pride in delivering exceptional
-              customer care, guided by our deeply ingrained values.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Contact Information with Icons */}
-      <div className="py-16 px-6 md:px-16 lg:px-36 max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row gap-8">
-          {/* Left - Contact Info */}
-          <div className="md:w-1/2 bg-white/10 p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-semibold mb-6">CONTACT US</h2>
-
-            <div className="mb-6 flex items-start space-x-4">
-              <img src="P.png" alt="Phone" className="h-6 w-6 mt-1" />
-              <div>
-                <h3 className="text-xl font-medium mb-2">Customer Support:</h3>
-                <p>Hotline (24X7)</p>
-                <p>
-                  Dial 0112369874 (Toll-free) or WhatsApp 0775698425
-                </p>
-              </div>
-            </div>
-
-            <div className="mb-6 flex items-start space-x-4">
-              <img src="E.png" alt="Email" className="h-6 w-6 mt-1" />
-              <div>
-                <h3 className="text-xl font-medium mb-2">Email:</h3>
-                <p>
-                  Write to us:{" "}
-                  <a
-                    href="mailto:cineceventrya@gmail.com"
-                    className="text-blue-400 hover:underline"
-                  >
-                    cineceventrya@gmail.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div className="mb-6 flex items- space-x-4">
-              <img src="L.png" alt="Location" className="h-6 w-6 mt-1" />
-              <div>
-                <h3 className="text-xl font-medium mb-2">CINEC Address:</h3>
-                <p>Millennium Drive, It Park,</p>
-                <p>Malabe,</p>
-                <p>Sri Lanka.</p>
-              </div>
-            </div>
-
-            <div className="mb-6 flex items-start space-x-4">
-              <img src="F.png" alt="Fax" className="h-6 w-6 mt-1" />
-              <div>
-                <h3 className="text-xl font-medium mb-2">Fax:</h3>
-                <p>+94112413505</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Right - Map */}
-          <div className="md:w-1/2">
-            <div className="bg-white/10 p-8 rounded-lg shadow-lg h-full">
-              <h2 className="text-2xl font-semibold mb-6">OUR LOCATION</h2>
-              <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
-                <iframe
-                  title="Google Map"
-                  src="https://www.google.com/maps/place/CINEC+Campus+(Pvt)+Ltd/@6.9203631,79.9477627,14z/data=!4m6!3m5!1s0x3ae25726e571c433:0xe6e8ba439e8a3bf8!8m2!3d6.9157034!4d79.9604549!16s%2Fm%2F06w1wy7?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="min-h-[300px]"
-                ></iframe>
-              </div>
+      <div className="relative my-40 mb-60 px-6 md:px-16 lg:px-40 xl:px-44 overflow-hidden min-h-[80vh]">
+        <BlurCircle top="150px" left="0px" />
+        <BlurCircle bottom="50px" right="50px" />
+        <div className="py-16 px-6 md:px-16 lg:px-36">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold color-blue mb-8">
+              Hey! Tell us how we can help you?
+            </h2>
+            <div className="px-4 md:px-8">
+              <p className="text-lg md:text-xl leading-relaxed">
+                Our unwavering commitment to customer satisfaction is at the
+                core of our operations. We take immense pride in delivering
+                exceptional customer care, guided by our deeply ingrained
+                values.
+              </p>
             </div>
           </div>
         </div>
+
+        {/* Contact Information with Icons */}
+        <div className="py-16 px-6 md:px-16 lg:px-36 max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row gap-8">
+            {/* Left - Contact Info */}
+            <div className="md:w-1/2 bg-white/10 p-8 rounded-lg shadow-lg">
+              <h2 className="text-2xl font-semibold mb-6">CONTACT US</h2>
+
+              <div className="mb-6 flex items-start space-x-4">
+                <img src="P.png" alt="Phone" className="h-6 w-6 mt-1" />
+                <div>
+                  <h3 className="text-xl font-medium mb-2">
+                    Customer Support:
+                  </h3>
+                  <p>Hotline (24X7)</p>
+                  <p>Dial 0112369874 (Toll-free) or WhatsApp 0775698425</p>
+                </div>
+              </div>
+
+              <div className="mb-6 flex items-start space-x-4">
+                <img src="E.png" alt="Email" className="h-6 w-6 mt-1" />
+                <div>
+                  <h3 className="text-xl font-medium mb-2">Email:</h3>
+                  <p>
+                    Write to us:{" "}
+                    <a
+                      href="mailto:cineceventrya@gmail.com"
+                      className="text-blue-400 hover:underline"
+                    >
+                      cineceventrya@gmail.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <div className="mb-6 flex items-start space-x-4">
+                <img src="L.png" alt="Location" className="h-6 w-6 mt-1" />
+                <div>
+                  <h3 className="text-xl font-medium mb-2">CINEC Address:</h3>
+                  <p>Millennium Drive, It Park,</p>
+                  <p>Malabe,</p>
+                  <p>Sri Lanka.</p>
+                </div>
+              </div>
+
+              <div className="mb-6 flex items-start space-x-4">
+                <img src="F.png" alt="Fax" className="h-6 w-6 mt-1" />
+                <div>
+                  <h3 className="text-xl font-medium mb-2">Fax:</h3>
+                  <p>+94112413505</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right - Map */}
+            <div className="md:w-1/2">
+              <div className="bg-white/10 p-8 rounded-lg shadow-lg h-full">
+                <h2 className="text-2xl font-semibold mb-6">OUR LOCATION</h2>
+                <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                  <iframe
+                    title="Google Map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63307.92682498327!2d79.931981!3d6.915703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25726e571c433%3A0xe6e8ba439e8a3bf8!2sCINEC%20Campus%20(Pvt)%20Ltd.!5e0!3m2!1sen!2slk!4v1691642032642!5m2!1sen!2slk"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="min-h-[300px]"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ChatBot */}
+        <ChatBot />
       </div>
-
-
-      {/* ChatBot */}
-      <ChatBot />
     </div>
   );
 };
