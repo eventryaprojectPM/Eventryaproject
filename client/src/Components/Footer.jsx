@@ -7,10 +7,8 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-gray-500 pb-14">
         <div className="md:max-w-96">
           <img alt="" class="h-11" src={assets.logo} />
-          <p className="mt-6 text-sm">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book.
+          <p className="mt-6 text-sm font-semibold mb-5">
+            The CINEC Campus Event Booking System makes it easy for students, staff, and guests to find, register, and stay updated on campus events, encouraging participation, learning, and collaboration within the CINEC community.
           </p>
           <div className="flex items-center gap-2 mt-4">
             <img
@@ -27,7 +25,7 @@ const Footer = () => {
         </div>
         <div className="flex-1 flex items-start md:justify-end gap-20 md:gap-40">
           <div>
-            <h2 className="font-semibold mb-5">Company</h2>
+            <h2 className="text-xl font-semibold border-b-2 border-white inline-block mb-4">Navigation</h2>
             <ul className="text-sm space-y-2">
               <li>
                 <a href="#">Home</a>
@@ -36,20 +34,48 @@ const Footer = () => {
                 <a href="#">About us</a>
               </li>
               <li>
+                <a href="#">Events</a>
+              </li>
+              <li>
+                <a href="#">Feed Back</a>
+              </li>
+              <li>
                 <a href="#">Contact us</a>
               </li>
               <li>
-                <a href="#">Privacy policy</a>
+                <a href="#">Favourites</a>
               </li>
+            
             </ul>
           </div>
-          <div>
-            <h2 className="font-semibold mb-5">Get in touch</h2>
-            <div className="text-sm space-y-2">
-              <p>+1-234-567-890</p>
-              <p>contact@example.com</p>
-            </div>
-          </div>
+        <div>
+          <h4 className="text-xl font-semibold border-b-2 border-white inline-block mb-4">Contact Details</h4>
+          <p>CINEC Campus (Pvt) Ltd.</p>
+          <p>Millennium Drive, IT Park, Malabe, Sri Lanka.</p>
+          <p>Phone: <a href="tel:+94112413500" className="text-blue-300 hover:underline">+94 11 2 413 500</a></p>
+          <p>Hotline: <a href="tel:+94114486400" className="text-blue-300 hover:underline">+94 11 4 486 400</a></p>
+          <p>Fax: +94 11 2 413 505</p>
+          <p>Email: 
+            <a href="mailto:info@cinec.edu" className="text-blue-300 hover:underline"> info@cinec.edu</a>, 
+            <a href="mailto:maritime@cinec.edu" className="text-blue-300 hover:underline"> maritime@cinec.edu</a>
+          </p>
+        </div>
+
+        {/* Map Section */}
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.123456789!2d79.964857315!3d6.927123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593f0!2sCINEC!5e0!3m2!1sen!2slk!4v1590000000000"
+            width="100%"
+            height="200"
+            className="rounded-md"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            title="CINEC Map"
+          ></iframe>
+        </div>
+      
+          
         </div>
       </div>
       <p className="pt-4 text-center text-sm pb-5">

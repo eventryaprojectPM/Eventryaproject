@@ -20,16 +20,16 @@ export const dummyTrailers = [
     videoUrl: "/images/Tvideo.mp4",
   },
   {
-    image: "https://img.youtube.com/vi/-sAOWhvheK8/maxresdefault.jpg",
-    videoUrl: "https://www.youtube.com/watch?v=-sAOWhvheK8",
+    image: "/images/Medusa.jpg",
+    videoUrl: "/images/Tvideo2.mp4",
   },
   {
-    image: "https://img.youtube.com/vi/1pHDWnXmK7Y/maxresdefault.jpg",
-    videoUrl: "https://www.youtube.com/watch?v=1pHDWnXmK7Y",
+    image: "/images/kalawakasha.jpg",
+    videoUrl: "https://youtu.be/1pHDWnXmK7Y",
   },
   {
-    image: "https://img.youtube.com/vi/umiKiW4En9g/maxresdefault.jpg",
-    videoUrl: "https://www.youtube.com/watch?v=umiKiW4En9g",
+    image: "/images/kanimadala.jpg",
+    videoUrl: "https://youtu.be/umiKiW4En9g",
   },
 ];
 

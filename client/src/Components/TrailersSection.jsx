@@ -8,19 +8,19 @@ const TrailersSection = () => {
 
   return (
     <div className="px-6 md:px-16 lg:px-24 xl:px-44 py-20 overflow-hidden">
-      <p className="text-gray-300 font-medium text-lg max-w-[960px] mx-auto">
+      <p className="text-gray-300 font-bold text-2xl max-w-[960px] mx-auto">
         EventHighlights
       </p>
 
       <div className="relative mt-6">
-        <BlurCircle top="-100px" right="-100px" />
+        <BlurCircle top="-100px" right="-100px"  />
 
         <video
           src={currentTrailer.videoUrl}
           controls
           className="mx-auto max-w-full"
-          width="960"
-          height="540"
+          width="300"
+          height="300"
         />
       </div>
       <div className="group grid grid-cols-4 gap-4 md:gap-8 max-w-3xl mx-auto ">
