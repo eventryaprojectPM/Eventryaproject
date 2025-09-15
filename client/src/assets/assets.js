@@ -22,7 +22,7 @@ export const dummyTrailers = [
   {
     image: "/images/Medusa.jpg",
     videoUrl: "/images/Tvideo2.mp4",
-  },
+  }, 
   {
     image: "/images/kalawakasha.jpg",
     videoUrl: "https://youtu.be/1pHDWnXmK7Y",
@@ -161,7 +161,7 @@ export const dummyShowsData = [
     overview:
       "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
     poster_path:
-      "https://image.tmdb.org/t/p/original/mKKqV23MQ0uakJS8OCE2TfV5jNS.jpg",
+      "/images/Medusa.jpg",
     backdrop_path: "/images/Medusa.jpg",
     genres: [
       { id: 10751, name: "Family" },
@@ -201,13 +201,13 @@ export const dummyShowsData = [
   {
     _id: "950387",
     id: 950387,
-    title: "A Minecraft Movie",
+    title: "IGNITE",
     overview:
       "Four misfits find themselves struggling with ordinary problems when they are suddenly pulled through a mysterious portal into the Overworld: a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world while embarking on a magical quest with an unexpected, expert crafter, Steve.",
     poster_path:
-      "https://image.tmdb.org/t/p/original/yFHHfHcUgGAxziP1C3lLt0q2T4s.jpg",
+      "/images/Rectangle 8.png",
     backdrop_path:
-      "https://image.tmdb.org/t/p/original/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
+      "/images/Rectangle 8.png",
     genres: [
       { id: 10751, name: "Family" },
       { id: 35, name: "Comedy" },
@@ -250,13 +250,13 @@ export const dummyShowsData = [
   {
     _id: "575265",
     id: 575265,
-    title: "Mission: Impossible - The Final Reckoning",
+    title: "Adayalama",
     overview:
       "Ethan Hunt and team continue their search for the terrifying AI known as the Entity — which has infiltrated intelligence networks all over the globe — with the world's governments and a mysterious ghost from Hunt's past on their trail. Joined by new allies and armed with the means to shut the Entity down for good, Hunt is in a race against time to prevent the world as we know it from changing forever.",
     poster_path:
-      "https://image.tmdb.org/t/p/original/z53D72EAOxGRqdr7KXXWp9dJiDe.jpg",
+      "/images/Rectangle 9.png",
     backdrop_path:
-      "https://image.tmdb.org/t/p/original/1p5aI299YBnqrEEvVGJERk2MXXb.jpg",
+      "/images/Rectangle 9.png",
     genres: [
       { id: 28, name: "Action" },
       { id: 12, name: "Adventure" },
@@ -273,13 +273,13 @@ export const dummyShowsData = [
   {
     _id: "986056",
     id: 986056,
-    title: "Thunderbolts*",
+    title: "APEXPATH'25",
     overview:
       "After finding themselves ensnared in a death trap, seven disillusioned castoffs must embark on a dangerous mission that will force them to confront the darkest corners of their pasts.",
     poster_path:
-      "https://image.tmdb.org/t/p/original/m9EtP1Yrzv6v7dMaC9mRaGhd1um.jpg",
+      "/images/images.jpeg",
     backdrop_path:
-      "https://image.tmdb.org/t/p/original/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
+      "/images/images.jpeg",
     genres: [
       { id: 28, name: "Action" },
       { id: 878, name: "Science Fiction" },
