@@ -122,8 +122,7 @@ export const dummyShowsData = [
     title: "Padura",
     overview:
       "Padura is a captivating musical show that brings together powerful voices, live instruments, and soulful performances. It celebrates culture, rhythm, and the magic of music in an unforgettable experience.",
-    poster_path:
-      "https://motacolombo.lk/wp-content/uploads/2023/01/padura/8-768x512.jpg",
+    poster_path: "/images/padura.jpg",
     backdrop_path: "/images/padura.jpg",
     genres: [
       { id: 28, name: "Action" },
@@ -164,8 +163,7 @@ export const dummyShowsData = [
     title: "Medusa",
     overview:
       "Medusa is a grand musical show featuring powerful live performances and dynamic musical bands. With stunning vocals, rhythm, and stage energy, it promises an unforgettable night of music and entertainment.",
-    poster_path:
-      "/images/Medusa.jpg",
+    poster_path: "/images/Medusa.jpg",
     backdrop_path: "/images/Medusa.jpg",
     genres: [
       { id: 10751, name: "Family" },
@@ -208,10 +206,8 @@ export const dummyShowsData = [
     title: "IGNITE",
     overview:
       "IGNITE is CINEC's annual event for students to showcase creativity, innovation, and leadership. It features workshops, competitions, and exhibitions to learn, present ideas, and connect with professionals.",
-    poster_path:
-      "/images/Rectangle 8.png",
-    backdrop_path:
-      "/images/Rectangle 8.png",
+    poster_path: "/images/Rectangle 8.png",
+    backdrop_path: "/images/Rectangle 8.png",
     genres: [
       { id: 10751, name: "Family" },
       { id: 35, name: "Comedy" },
@@ -257,10 +253,8 @@ export const dummyShowsData = [
     title: "Adayalama",
     overview:
       "Adayalama is an annual cultural event where students showcase their drama and theatre skills. It promotes creativity, teamwork, and performing arts within the campus.",
-    poster_path:
-      "/images/Rectangle 9.png",
-    backdrop_path:
-      "/images/Rectangle 9.png",
+    poster_path: "/images/Rectangle 9.png",
+    backdrop_path: "/images/Rectangle 9.png",
     genres: [
       { id: 28, name: "Action" },
       { id: 12, name: "Adventure" },
@@ -280,10 +274,8 @@ export const dummyShowsData = [
     title: "APEXPATH'25",
     overview:
       "APEXPATH'25 is an annual freshers’ welcome event where seniors from various departments host performances, activities, and interactive sessions to warmly integrate new students into the CINEC community.",
-    poster_path:
-      "/images/images.jpeg",
-    backdrop_path:
-      "/images/images.jpeg",
+    poster_path: "/images/images.jpeg",
+    backdrop_path: "/images/images.jpeg",
     genres: [
       { id: 28, name: "Action" },
       { id: 878, name: "Science Fiction" },
