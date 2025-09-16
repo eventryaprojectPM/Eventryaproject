@@ -80,7 +80,7 @@ const SeatLayout = () => {
   // ✅ Dummy occupied seats (replace backend call)
   const getOccupiedSeats = async () => {
     // Pretend A1, B2, C3 are already booked
-    setOccupiedSeats(["A1", "B2", "C3"]);
+    setOccupiedSeats(["A1", "B2","B3","B4", "C3"]);
   };
 
   // ✅ Dummy booking (replace backend call)
