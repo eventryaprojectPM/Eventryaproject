@@ -1,15 +1,14 @@
 import { useContext } from "react";
 import { useState } from "react";
-import { createContext } from "react";
 import axios from "axios";
 import { useAuth, useUser } from "@clerk/clerk-react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import toast from "react-hot-toast";
+import AppContext from "./AppContext";
+
 
 axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
-
-export const AppContext = createContext()
 
 export const AppProvider = ({ children }) => {
 
