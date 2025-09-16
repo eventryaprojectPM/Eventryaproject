@@ -121,8 +121,9 @@ export const dummyShowsData = [
     id: 324544,
     title: "Padura",
     overview:
-      "A queen sends the powerful and feared sorceress Gray Alys to the ghostly wilderness of the Lost Lands in search of a magical power, where she and her guide, the drifter Boyce, must outwit and outfight both man and demon.",
-    poster_path: "/images/padura.jpg",
+      "Padura is a captivating musical show that brings together powerful voices, live instruments, and soulful performances. It celebrates culture, rhythm, and the magic of music in an unforgettable experience.",
+    poster_path:
+      "https://motacolombo.lk/wp-content/uploads/2023/01/padura/8-768x512.jpg",
     backdrop_path: "/images/padura.jpg",
     genres: [
       { id: 28, name: "Action" },
@@ -131,7 +132,7 @@ export const dummyShowsData = [
     ],
     casts: dummyCastsData,
     release_date: "2025-02-27",
-    original_language: "en",
+    original_language: "entertainment",
     tagline: "She seeks the power to free her people.",
     vote_average: 6.4,
     vote_count: 15000,
@@ -142,7 +143,7 @@ export const dummyShowsData = [
     id: 1232546,
     title: "kalaawakasha",
     overview:
-      "One year after her sister Melanie mysteriously disappeared, Clover and her friends head into the remote valley where she vanished in search of answers. Exploring an abandoned visitor center, they find themselves stalked by a masked killer and horrifically murdered one by one...only to wake up and find themselves back at the beginning of the same evening.",
+      "Kalawakasha is a vibrant cultural show that brings together dancing, singing, and stage dramas in one spectacular event. It celebrates creativity and talent with performances full of color, rhythm, and emotion.",
     poster_path: "/images/kalawakasha.jpg",
     backdrop_path: "/images/kalawakasha.jpg",
     genres: [
@@ -151,7 +152,7 @@ export const dummyShowsData = [
     ],
     casts: dummyCastsData,
     release_date: "2025-04-23",
-    original_language: "en",
+    original_language: "entertainment",
     tagline: "Every night a different nightmare.",
     vote_average: 6.405,
     vote_count: 18000,
@@ -162,8 +163,9 @@ export const dummyShowsData = [
     id: 552524,
     title: "Medusa",
     overview:
-      "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
-    poster_path: "/images/Medusa.jpg",
+      "Medusa is a grand musical show featuring powerful live performances and dynamic musical bands. With stunning vocals, rhythm, and stage energy, it promises an unforgettable night of music and entertainment.",
+    poster_path:
+      "/images/Medusa.jpg",
     backdrop_path: "/images/Medusa.jpg",
     genres: [
       { id: 10751, name: "Family" },
@@ -172,7 +174,7 @@ export const dummyShowsData = [
     ],
     casts: dummyCastsData,
     release_date: "2025-05-17",
-    original_language: "en",
+    original_language: "entertainment",
     tagline: "Hold on to your coconuts.",
     vote_average: 7.117,
     vote_count: 27500,
@@ -183,7 +185,7 @@ export const dummyShowsData = [
     id: 668489,
     title: "Kanimadala",
     overview:
-      "When a drug heist swerves lethally out of control, a jaded cop fights his way through a corrupt city's criminal underworld to save a politician's son.",
+      "Kanimadala is a vibrant cultural event showcasing Sri Lankan traditions through music, dance, and drama. Alongside the performance, a food festival adds a practical hospitality experience, making it both a cultural celebration and an educational project.",
     poster_path:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHDPi0IYjZJbBfqwBqCqv_-QzyyfntbdSrDA&s",
     backdrop_path: "/images/kanimadala.jpg",
@@ -194,7 +196,7 @@ export const dummyShowsData = [
     ],
     casts: dummyCastsData,
     release_date: "2025-04-25",
-    original_language: "en",
+    original_language: "entertainment",
     tagline: "No law. Only disorder.",
     vote_average: 6.537,
     vote_count: 35960,
@@ -205,9 +207,11 @@ export const dummyShowsData = [
     id: 950387,
     title: "IGNITE",
     overview:
-      "Four misfits find themselves struggling with ordinary problems when they are suddenly pulled through a mysterious portal into the Overworld: a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world while embarking on a magical quest with an unexpected, expert crafter, Steve.",
-    poster_path: "/images/Rectangle 8.png",
-    backdrop_path: "/images/Rectangle 8.png",
+      "IGNITE is CINEC's annual event for students to showcase creativity, innovation, and leadership. It features workshops, competitions, and exhibitions to learn, present ideas, and connect with professionals.",
+    poster_path:
+      "/images/Rectangle 8.png",
+    backdrop_path:
+      "/images/Rectangle 8.png",
     genres: [
       { id: 10751, name: "Family" },
       { id: 35, name: "Comedy" },
@@ -216,7 +220,7 @@ export const dummyShowsData = [
     ],
     casts: dummyCastsData,
     release_date: "2025-03-31",
-    original_language: "en",
+    original_language: "entertainment",
     tagline: "Be there and be square.",
     vote_average: 6.516,
     vote_count: 15225,
@@ -227,7 +231,7 @@ export const dummyShowsData = [
     id: 668490,
     title: "Raja Man Wahala",
     overview:
-      "Set in a time of political unrest, 'Raja Man Wahala' follows the journey of a humble villager who dares to defy royal injustice and inspire a movement for freedom. A story of resistance, sacrifice, and courage.",
+      "Raja Man Wahala is a popular Sri Lankan stage drama that blends comedy, drama, and music to entertain audiences. It has won several awards and is known for its engaging storytelling and lively performances.",
     poster_path:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB69M97uig0LtHZR37cCCEtjHk_m2P6ADznA&s",
     backdrop_path: "/images/raja.jpg",
@@ -241,7 +245,7 @@ export const dummyShowsData = [
 
     casts: dummyCastsData,
     release_date: "2025-04-25",
-    original_language: "en",
+    original_language: "entertainment",
     tagline: "No law. Only disorder.",
     vote_average: 6.537,
     vote_count: 35960,
@@ -252,9 +256,11 @@ export const dummyShowsData = [
     id: 575265,
     title: "Adayalama",
     overview:
-      "Ethan Hunt and team continue their search for the terrifying AI known as the Entity — which has infiltrated intelligence networks all over the globe — with the world's governments and a mysterious ghost from Hunt's past on their trail. Joined by new allies and armed with the means to shut the Entity down for good, Hunt is in a race against time to prevent the world as we know it from changing forever.",
-    poster_path: "/images/Rectangle 9.png",
-    backdrop_path: "/images/Rectangle 9.png",
+      "Adayalama is an annual cultural event where students showcase their drama and theatre skills. It promotes creativity, teamwork, and performing arts within the campus.",
+    poster_path:
+      "/images/Rectangle 9.png",
+    backdrop_path:
+      "/images/Rectangle 9.png",
     genres: [
       { id: 28, name: "Action" },
       { id: 12, name: "Adventure" },
@@ -262,7 +268,7 @@ export const dummyShowsData = [
     ],
     casts: dummyCastsData,
     release_date: "2025-05-17",
-    original_language: "en",
+    original_language: "entertainment",
     tagline: "Our lives are the sum of our choices.",
     vote_average: 7.042,
     vote_count: 19885,
@@ -273,9 +279,11 @@ export const dummyShowsData = [
     id: 986056,
     title: "APEXPATH'25",
     overview:
-      "After finding themselves ensnared in a death trap, seven disillusioned castoffs must embark on a dangerous mission that will force them to confront the darkest corners of their pasts.",
-    poster_path: "/images/images.jpeg",
-    backdrop_path: "/images/images.jpeg",
+      "APEXPATH'25 is an annual freshers’ welcome event where seniors from various departments host performances, activities, and interactive sessions to warmly integrate new students into the CINEC community.",
+    poster_path:
+      "/images/images.jpeg",
+    backdrop_path:
+      "/images/images.jpeg",
     genres: [
       { id: 28, name: "Action" },
       { id: 878, name: "Science Fiction" },
@@ -283,7 +291,7 @@ export const dummyShowsData = [
     ],
     casts: dummyCastsData,
     release_date: "2025-04-30",
-    original_language: "en",
+    original_language: "entertainment",
     tagline: "Everyone deserves a second shot.",
     vote_average: 7.443,
     vote_count: 23569,
