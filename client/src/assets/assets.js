@@ -16,18 +16,22 @@ export const assets = {
 
 export const dummyTrailers = [
   {
+    movieId: "324544", // Padura
     image: "/images/padura.jpg",
     videoUrl: "/images/Tvideo.mp4",
   },
   {
+    movieId: "552524", // Medusa
     image: "/images/Medusa.jpg",
     videoUrl: "/images/Tvideo2.mp4",
-  }, 
+  },
   {
+    movieId: "1232546", // kalawakasha
     image: "/images/kalawakasha.jpg",
     videoUrl: "https://youtu.be/1pHDWnXmK7Y",
   },
   {
+    movieId: "668489", // Kanimadala
     image: "/images/kanimadala.jpg",
     videoUrl: "https://youtu.be/umiKiW4En9g",
   },
