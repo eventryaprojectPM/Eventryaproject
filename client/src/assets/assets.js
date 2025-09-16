@@ -118,8 +118,7 @@ export const dummyShowsData = [
     title: "Padura",
     overview:
       "A queen sends the powerful and feared sorceress Gray Alys to the ghostly wilderness of the Lost Lands in search of a magical power, where she and her guide, the drifter Boyce, must outwit and outfight both man and demon.",
-    poster_path:
-      "https://motacolombo.lk/wp-content/uploads/2023/01/padura/8-768x512.jpg",
+    poster_path: "/images/padura.jpg",
     backdrop_path: "/images/padura.jpg",
     genres: [
       { id: 28, name: "Action" },
@@ -160,8 +159,7 @@ export const dummyShowsData = [
     title: "Medusa",
     overview:
       "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
-    poster_path:
-      "/images/Medusa.jpg",
+    poster_path: "/images/Medusa.jpg",
     backdrop_path: "/images/Medusa.jpg",
     genres: [
       { id: 10751, name: "Family" },
@@ -204,10 +202,8 @@ export const dummyShowsData = [
     title: "IGNITE",
     overview:
       "Four misfits find themselves struggling with ordinary problems when they are suddenly pulled through a mysterious portal into the Overworld: a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world while embarking on a magical quest with an unexpected, expert crafter, Steve.",
-    poster_path:
-      "/images/Rectangle 8.png",
-    backdrop_path:
-      "/images/Rectangle 8.png",
+    poster_path: "/images/Rectangle 8.png",
+    backdrop_path: "/images/Rectangle 8.png",
     genres: [
       { id: 10751, name: "Family" },
       { id: 35, name: "Comedy" },
@@ -232,12 +228,12 @@ export const dummyShowsData = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB69M97uig0LtHZR37cCCEtjHk_m2P6ADznA&s",
     backdrop_path: "/images/raja.jpg",
     genres: [
-  { id: 18, name: "Drama" },
-  { id: 36, name: "History" },
-  { id: 10752, name: "War" },       // If political/historical background
-  { id: 99, name: "Documentary" },  // If real-based
-  { id: 35, name: "Comedy" },       // If satirical or stage-play
-],
+      { id: 18, name: "Drama" },
+      { id: 36, name: "History" },
+      { id: 10752, name: "War" }, // If political/historical background
+      { id: 99, name: "Documentary" }, // If real-based
+      { id: 35, name: "Comedy" }, // If satirical or stage-play
+    ],
 
     casts: dummyCastsData,
     release_date: "2025-04-25",
@@ -253,10 +249,8 @@ export const dummyShowsData = [
     title: "Adayalama",
     overview:
       "Ethan Hunt and team continue their search for the terrifying AI known as the Entity — which has infiltrated intelligence networks all over the globe — with the world's governments and a mysterious ghost from Hunt's past on their trail. Joined by new allies and armed with the means to shut the Entity down for good, Hunt is in a race against time to prevent the world as we know it from changing forever.",
-    poster_path:
-      "/images/Rectangle 9.png",
-    backdrop_path:
-      "/images/Rectangle 9.png",
+    poster_path: "/images/Rectangle 9.png",
+    backdrop_path: "/images/Rectangle 9.png",
     genres: [
       { id: 28, name: "Action" },
       { id: 12, name: "Adventure" },
@@ -276,10 +270,8 @@ export const dummyShowsData = [
     title: "APEXPATH'25",
     overview:
       "After finding themselves ensnared in a death trap, seven disillusioned castoffs must embark on a dangerous mission that will force them to confront the darkest corners of their pasts.",
-    poster_path:
-      "/images/images.jpeg",
-    backdrop_path:
-      "/images/images.jpeg",
+    poster_path: "/images/images.jpeg",
+    backdrop_path: "/images/images.jpeg",
     genres: [
       { id: 28, name: "Action" },
       { id: 878, name: "Science Fiction" },
@@ -293,7 +285,6 @@ export const dummyShowsData = [
     vote_count: 23569,
     runtime: 127,
   },
-  
 ];
 
 export const dummyDateTimeData = {
