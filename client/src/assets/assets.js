@@ -26,14 +26,14 @@ export const dummyTrailers = [
     videoUrl: "/images/Tvideo2.mp4",
   },
   {
-    movieId: "1232546", // kalawakasha
-    image: "/images/kalawakasha.jpg",
-    videoUrl: "https://youtu.be/1pHDWnXmK7Y",
+    movieId: "575265", // cricket
+    image: "/images/cricket.jpg",
+    videoUrl: "/images/cricet.mp4",
   },
   {
-    movieId: "668489", // Kanimadala
-    image: "/images/kanimadala.jpg",
-    videoUrl: "https://youtu.be/umiKiW4En9g",
+    movieId: "668489", // rushasta
+    image: "/images/sahstra.jpg",
+    videoUrl: "/images/sastra.mp4",
   },
 ];
 
@@ -181,12 +181,11 @@ export const dummyShowsData = [
   {
     _id: "668489",
     id: 668489,
-    title: "Kanimadala",
+    title: "Ru sahastra",
     overview:
       "Kanimadala is a vibrant cultural event showcasing Sri Lankan traditions through music, dance, and drama. Alongside the performance, a food festival adds a practical hospitality experience, making it both a cultural celebration and an educational project.",
-    poster_path:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHDPi0IYjZJbBfqwBqCqv_-QzyyfntbdSrDA&s",
-    backdrop_path: "/images/kanimadala.jpg",
+    poster_path: "/images/sahstra.jpg",
+    backdrop_path: "/images/sahstra.jpg",
     genres: [
       { id: 28, name: "Action" },
       { id: 80, name: "Crime" },
@@ -203,11 +202,11 @@ export const dummyShowsData = [
   {
     _id: "950387",
     id: 950387,
-    title: "IGNITE",
+    title: "Kannimadala",
     overview:
-      "IGNITE is CINEC's annual event for students to showcase creativity, innovation, and leadership. It features workshops, competitions, and exhibitions to learn, present ideas, and connect with professionals.",
-    poster_path: "/images/Rectangle 8.png",
-    backdrop_path: "/images/Rectangle 8.png",
+      "Kanimadala is a vibrant cultural event showcasing Sri Lankan traditions through music, dance, and drama. Alongside the performance, a food festival adds a practical hospitality experience, making it both a cultural celebration and an educational project.",
+    poster_path: "/images/kanimadala.jpg",
+    backdrop_path: "/images/kanimadala.jpg",
     genres: [
       { id: 10751, name: "Family" },
       { id: 35, name: "Comedy" },
@@ -250,11 +249,11 @@ export const dummyShowsData = [
   {
     _id: "575265",
     id: 575265,
-    title: "Adayalama",
+    title: "Cricket",
     overview:
       "Adayalama is an annual cultural event where students showcase their drama and theatre skills. It promotes creativity, teamwork, and performing arts within the campus.",
-    poster_path: "/images/Rectangle 9.png",
-    backdrop_path: "/images/Rectangle 9.png",
+    poster_path: "/images/cricket.jpg",
+    backdrop_path: "/images/cricket.jpg",
     genres: [
       { id: 28, name: "Action" },
       { id: 12, name: "Adventure" },
@@ -293,10 +292,8 @@ export const dummyShowsData = [
 
 export const dummyDateTimeData = {
   "2025-10-01": [
-    { time: "2025-07-24T01:00:00.000Z", showId: "68395b407f6329be2bb45bd1" },
-    
+    { time: "2025-10-01T13:00:00.000Z", showId: "68395b407f6329be2bb45bd1" },
   ],
- 
 };
 
 
@@ -379,11 +376,11 @@ export const dummyBookingData = [
     show: {
       _id: "68352363e96d99513e4221a4",
       movie: dummyShowsData[0],
-      showDateTime: "2025-06-30T02:30:00.000Z",
+      showDateTime: "2025-10-01T13:00:00.000Z",
       showPrice: 59,
     },
     amount: 98,
-    bookedSeats: ["D1", "D2"],
+    bookedSeats: ["A2", "A3", "A4", "A5", "A6"],
     isPaid: false,
   },
   {
@@ -391,25 +388,25 @@ export const dummyBookingData = [
     user: { name: "GreatStack" },
     show: {
       _id: "68352363e96d99513e4221a4",
-      movie: dummyShowsData[0],
-      showDateTime: "2025-06-30T02:30:00.000Z",
+      movie: dummyShowsData[2],
+      showDateTime: "2025-11-01T13:00:00.000Z",
       showPrice: 59,
     },
     amount: 49,
-    bookedSeats: ["A1"],
-    isPaid: true,
+    bookedSeats: ["B2", "B3", "B4"],
+    isPaid: false,
   },
   {
     _id: "68396334fb83252d82e17295",
     user: { name: "GreatStack" },
     show: {
       _id: "68352363e96d99513e4221a4",
-      movie: dummyShowsData[0],
-      showDateTime: "2025-06-30T02:30:00.000Z",
+      movie: dummyShowsData[3],
+      showDateTime: "2025-06-30T15:00:00.000Z",
       showPrice: 59,
     },
     amount: 147,
-    bookedSeats: ["A1", "A2", "A3"],
-    isPaid: true,
+    bookedSeats: ["A1"],
+    isPaid: false,
   },
 ];
