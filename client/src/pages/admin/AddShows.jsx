@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import Loading from "../../Components/Loading";
 import Title from "../../Components/admin/Title";
 import { CheckIcon, DeleteIcon, StarIcon } from "lucide-react";
 import { kConverter } from "../../lib/kconverter";
-import { useAppContext } from "../../context/AppContext";
 import toast from "react-hot-toast";
-
+import { dummyShowData } from "../../assets/assets";
 
 const AddShows = () => {
-  const {axios, getToken, user, image_base_url}= useAppContext()
-  const currency = import.meta.env.VITE_CURRENCY;
+  const currency = "LKR"; 
+
   const [nowPlayingMovies, setNowPlayingMovies] = useState([]);
   const [selectedMovie, setSelectedMovie] = useState(null);
   const [dateTimeSelection, setDateTimeSelection] = useState({});
@@ -17,20 +16,17 @@ const AddShows = () => {
   const [showPrice, setShowPrice] = useState("");
   const [addingShow, setAddingShow] = useState(false);
 
-  const fetchNowPlayingMovies = async () => {
-    try {
-      const { data } = await axios.get('/api/show/now-playing', {
-        headers: { Authorization: `Bearer ${await getToken()}`}
-      })
-      if (data.success) {
-        setNowPlayingMovies(data.movies)
-      }
-      
-    } catch (error) {
-      console.error('Error fetching movies:', error)
-    }
-    
-  };
+  const fallbackPoster =
+    "https://via.placeholder.com/300x450.png?text=No+Image";
+
+  const getPosterUrl = (posterPath) => posterPath || fallbackPoster;
+
+  // Load dummy data
+  useEffect(() => {
+    setNowPlayingMovies(dummyShowData);
+  }, []);
+
+  // Add a date-time entry
   const handleDateTimeAdd = () => {
     if (!dateTimeInput) return;
     const [date, time] = dateTimeInput.split("T");
@@ -43,7 +39,11 @@ const AddShows = () => {
       }
       return prev;
     });
+
+    setDateTimeInput(""); // clear input after adding
   };
+
+  // Remove a time from selection
   const handleRemoveTime = (date, time) => {
     setDateTimeSelection((prev) => {
       const filteredTimes = prev[date].filter((t) => t !== time);
@@ -51,67 +51,49 @@ const AddShows = () => {
         const { [date]: _, ...rest } = prev;
         return rest;
       }
-      return {
-        ...prev,
-        [date]: filteredTimes,
-      };
+      return { ...prev, [date]: filteredTimes };
     });
   };
-  const handleSubmit = async () => {
-    try {
-      setAddingShow(true)
 
-      if (
-        !selectedMovie ||
-        Object.keys(dateTimeSelection).length === 0 ||
-        !showPrice
-      ) {
-        setAddingShow(false);
-        return toast("Missing required field");
-      }
+  // Handle dummy submit
+  const handleSubmit = () => {
+    setAddingShow(true);
 
-      const showsInput = Object.entries(dateTimeSelection).map(
-        ([date, time]) => ({ date, time }));
-      
-
-      const payload = {
-        movieId: selectedMovie,
-        showsInput,
-        showPrice: Number(showPrice)
-      }
-      const { data } = await axios.post("./api/show/add", payload, 
-        { headers: { Authorization: `Bearer ${await getToken()}` } }
-      )
-
-        
-        if(data.success) {
-          toast.success(data.message)
-          setSelectedMovie(null)
-          setDateTimeSelection({});
-          setShowPrice("")
-        } else {
-          toast.error(data.message)
-        }
-      
-    } catch (error) {
-      console.error("Submission error:", error);
-      toast.error('An error occurred. Please try again')
-
-      
-    }setAddingShow(false)
-  }
-
-
-  useEffect(() => {
-    if (user) {
-      fetchNowPlayingMovies();
+    if (
+      !selectedMovie ||
+      Object.keys(dateTimeSelection).length === 0 ||
+      !showPrice
+    ) {
+      setAddingShow(false);
+      return toast.error("Missing required field");
     }
-  }, [user]);
 
-  return nowPlayingMovies.length > 0 ? (
+    const showsInput = Object.entries(dateTimeSelection).map(
+      ([date, times]) => ({ date, times })
+    );
+
+    // Just log data for dummy testing
+    console.log({
+      movieId: selectedMovie,
+      showsInput,
+      showPrice,
+    });
+
+    toast.success("Event added successfully!");
+
+    // Reset state
+    setSelectedMovie(null);
+    setDateTimeSelection({});
+    setShowPrice("");
+    setAddingShow(false);
+  };
+
+  if (!nowPlayingMovies || nowPlayingMovies.length === 0) return <Loading />;
+
+  return (
     <>
       <Title text1="Add" text2="Events" />
-      <p className="mt-10 text-lg font-medium">Now Playing Events</p>
+      <p className="mt-10 text-lg font-medium">Up Coming Events</p>
       <div className="overflow-x-auto pb-4">
         <div className="group flex flex-wrap gap-4 mt-4 w-max">
           {nowPlayingMovies.map((movie) => (
@@ -122,22 +104,23 @@ const AddShows = () => {
             >
               <div className="relative rounded-lg overflow-hidden">
                 <img
-                  src={image_base_url + movie.poster_path}
-                  alt=""
+                  src={getPosterUrl(movie.poster_path)}
+                  alt={movie.title || "Event Poster"}
                   className="w-full object-cover brightness-90"
+                  onError={(e) => (e.currentTarget.src = fallbackPoster)}
                 />
                 <div className="text-sm flex items-center justify-between p-2 bg-black/70 w-full absolute bottom-0 left-0">
                   <p className="flex items-center gap-1 text-gray-400">
                     <StarIcon className="w-4 h-4 text-primary fill-primary" />
-                    {movie.vote_average.toFixed(1)}
+                    {movie.vote_average?.toFixed(1) || "N/A"}
                   </p>
                   <p className="text-gray-300">
-                    {kConverter(movie.vote_count)} Votes
+                    {movie.vote_count ? kConverter(movie.vote_count) : 0} Votes
                   </p>
                 </div>
               </div>
               {selectedMovie === movie.id && (
-                <div className="absolute top-2 right-2 flex items-center justify-center  bg-primary h-6 w-6 rounded">
+                <div className="absolute top-2 right-2 flex items-center justify-center bg-primary h-6 w-6 rounded">
                   <CheckIcon className="w-4 h-4 text-white" strokeWidth={2.5} />
                 </div>
               )}
@@ -148,9 +131,9 @@ const AddShows = () => {
         </div>
       </div>
 
-      {/*show price Input */}
+      {/* Show Price Input */}
       <div className="mt-8">
-        <label className="block text-sm font-medium mb-2">Show Price</label>
+        <label className="block text-sm font-medium mb-2">Event Price</label>
         <div className="inline-flex items-center gap-2 border border-gray-600 rounded-md px-3 py-2">
           <p className="text-gray-400 text-sm">{currency}</p>
           <input
@@ -163,7 +146,8 @@ const AddShows = () => {
           />
         </div>
       </div>
-      {/*date and time section */}
+
+      {/* Date and Time Section */}
       <div className="mt-6">
         <label className="block text-sm font-medium mb-2">
           Select Date and Time
@@ -177,14 +161,14 @@ const AddShows = () => {
           />
           <button
             onClick={handleDateTimeAdd}
-            className=" bg-primary/80 text-white px-3 py-2 text-sm rounded-lg hover:bg-primary cursor-pointer"
+            className="bg-primary/80 text-white px-3 py-2 text-sm rounded-lg hover:bg-primary cursor-pointer"
           >
             Add Time
           </button>
         </div>
       </div>
 
-      {/* Display selected Times */}
+      {/* Display Selected Times */}
       {Object.keys(dateTimeSelection).length > 0 && (
         <div className="mt-6">
           <h2 className="mb-2 font-semibold text-lg">Selected Date-Time</h2>
@@ -214,13 +198,14 @@ const AddShows = () => {
         </div>
       )}
 
-      <button onClick={handleSubmit} disabled={ addingShow} className="bg-primary text-white px-8 py-2 mt-6 rounded hover:bg-primary/90 transition-all cursor-pointer">
-        {" "}
-        Add Event
+      <button
+        onClick={handleSubmit}
+        disabled={addingShow}
+        className="bg-primary text-white px-8 py-2 mt-6 rounded hover:bg-primary/90 transition-all cursor-pointer"
+      >
+        {addingShow ? "Adding..." : "Add Event"}
       </button>
     </>
-  ) : (
-    <Loading />
   );
 };
 
