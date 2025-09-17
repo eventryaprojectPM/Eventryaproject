@@ -6,27 +6,69 @@ import { dateFormat } from "../../lib/dateFormat";
 
 const ListShows = () => {
   const currency = import.meta.env.VITE_CURRENCY;
-  const [shows, setshows] = useState([]);
+  const [shows, setShows] = useState([]);
   const [loading, setLoading] = useState(true);
+
   const getAllShows = async () => {
     try {
-      setshows([
+      setShows([
         {
           movie: dummyShowsData[0],
-          sh0wDateTime: "2025-06-30T02:30:00.000z",
-          showPrice: 59,
+          showDateTime: "2025-10-01T02:30:00.000Z",
+          showPrice: 1000,
+          occupiedSeats: {
+            A2: "user_1",
+            A3: "user_2",
+            A4: "user_3",
+            A5: "user_2",
+            A6: "user_3",
+          },
+        },
+        {
+          movie: dummyShowsData[1],
+          showDateTime: "2025-10-01T04:30:00.000Z",
+          showPrice: 200,
           occupiedSeats: {
             A1: "user_1",
-            B1: "user_2",
-            C1: "user_3",
+            
           },
+        },
+        {
+          movie: dummyShowsData[2],
+          showDateTime: "2025-10-02T06:30:00.000Z",
+          showPrice: 3000,
+          occupiedSeats: {
+            B1: "user_1",
+            B2: "user_2",
+            B3: "user_3",
+          },
+        },
+        {
+          movie: dummyShowsData[3],
+          showDateTime: "2025-10-03T08:30:00.000Z",
+          showPrice: 1000,
+          occupiedSeats: {},
+        },
+        {
+          movie: dummyShowsData[4],
+          showDateTime: "2025-10-04T10:30:00.000Z",
+          showPrice: 1000,
+          occupiedSeats: {},
+        },
+        {
+          movie: dummyShowsData[6],
+          showDateTime: "2025-10-05T12:30:00.000Z",
+          showPrice: 1000,
+          occupiedSeats: {},
         },
       ]);
       setLoading(false);
     } catch (error) {
       console.error(error);
+      setLoading(false);
     }
   };
+
   useEffect(() => {
     getAllShows();
   }, []);
@@ -39,9 +81,9 @@ const ListShows = () => {
           <thead>
             <tr className="bg-primary/20 text-left text-white">
               <th className="py-2 font-medium pl-5">Event Name</th>
-              <th className="py-2 font-medium"> Time</th>
+              <th className="py-2 font-medium">Time</th>
               <th className="py-2 font-medium">Total Bookings</th>
-              <th className="py-2 font-medium">Earings</th>
+              <th className="py-2 font-medium">Earnings</th>
             </tr>
           </thead>
           <tbody className="text-sm font-light">
@@ -51,7 +93,7 @@ const ListShows = () => {
                 className="border-b border-primary/10 bg-primary/5 even:bg-primary/10"
               >
                 <td className="py-2 min-w-45 pl-5">{show.movie.title}</td>
-                <td className="py-2 ">{dateFormat(show.showDateTime)}</td>
+                <td className="py-2">{dateFormat(show.showDateTime)}</td>
                 <td className="py-2">
                   {Object.keys(show.occupiedSeats).length}
                 </td>
