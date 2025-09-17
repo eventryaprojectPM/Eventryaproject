@@ -221,6 +221,54 @@ export const dummyShowsData = [
     vote_count: 15225,
     runtime: 101,
   },
+  
+  {
+    _id: "575265",
+    id: 575265,
+    title: "Cricket",
+    overview:
+      "Adayalama is an annual cultural event where students showcase their drama and theatre skills. It promotes creativity, teamwork, and performing arts within the campus.",
+    poster_path: "/images/cricket.jpg",
+    backdrop_path: "/images/cricket.jpg",
+    genres: [
+      { id: 28, name: "Action" },
+      { id: 12, name: "Adventure" },
+      { id: 53, name: "Thriller" },
+    ],
+    casts: dummyCastsData,
+    release_date: "2025-05-17",
+    original_language: "entertainment",
+    tagline: "Our lives are the sum of our choices.",
+    vote_average: 7.042,
+    vote_count: 19885,
+    runtime: 170,
+  },
+ 
+];
+export const dummyShowData = [
+  
+  {
+    _id: "950387",
+    id: 950387,
+    title: "Kannimadala",
+    overview:
+      "Kanimadala is a vibrant cultural event showcasing Sri Lankan traditions through music, dance, and drama. Alongside the performance, a food festival adds a practical hospitality experience, making it both a cultural celebration and an educational project.",
+    poster_path: "/images/kanimadala.jpg",
+    backdrop_path: "/images/kanimadala.jpg",
+    genres: [
+      { id: 10751, name: "Family" },
+      { id: 35, name: "Comedy" },
+      { id: 12, name: "Adventure" },
+      { id: 14, name: "Fantasy" },
+    ],
+    casts: dummyCastsData,
+    release_date: "2025-03-31",
+    original_language: "entertainment",
+    tagline: "Be there and be square.",
+    vote_average: 6.516,
+    vote_count: 15225,
+    runtime: 101,
+  },
   {
     _id: "668490",
     id: 668490,
@@ -246,27 +294,7 @@ export const dummyShowsData = [
     vote_count: 35960,
     runtime: 107,
   },
-  {
-    _id: "575265",
-    id: 575265,
-    title: "Cricket",
-    overview:
-      "Adayalama is an annual cultural event where students showcase their drama and theatre skills. It promotes creativity, teamwork, and performing arts within the campus.",
-    poster_path: "/images/cricket.jpg",
-    backdrop_path: "/images/cricket.jpg",
-    genres: [
-      { id: 28, name: "Action" },
-      { id: 12, name: "Adventure" },
-      { id: 53, name: "Thriller" },
-    ],
-    casts: dummyCastsData,
-    release_date: "2025-05-17",
-    original_language: "entertainment",
-    tagline: "Our lives are the sum of our choices.",
-    vote_average: 7.042,
-    vote_count: 19885,
-    runtime: 170,
-  },
+ 
   {
     _id: "986056",
     id: 986056,
