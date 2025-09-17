@@ -130,7 +130,7 @@ export const dummyShowsData = [
       { id: 12, name: "Adventure" },
     ],
     casts: dummyCastsData,
-    release_date: "2025-02-27",
+    release_date: "2025-10-01",
     original_language: "entertainment",
     tagline: "She seeks the power to free her people.",
     vote_average: 6.4,
@@ -454,7 +454,7 @@ export const dummyBookingData = [
     show: {
       _id: "68352363e96d99513e4221a4",
       movie: dummyShowsData[3],
-      showDateTime: "2025-06-30T15:00:00.000Z",
+      showDateTime: "2025-10-30T13:00:00.000Z",
       showPrice: 200,
     },
     amount: 200,
