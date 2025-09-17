@@ -221,7 +221,7 @@ export const dummyShowsData = [
     vote_count: 15225,
     runtime: 101,
   },
-  
+
   {
     _id: "575265",
     id: 575265,
@@ -243,7 +243,31 @@ export const dummyShowsData = [
     vote_count: 19885,
     runtime: 170,
   },
- 
+  {
+    _id: "668490",
+    id: 668490,
+    title: "Raja Man Wahala",
+    overview:
+      "Raja Man Wahala is a popular Sri Lankan stage drama that blends comedy, drama, and music to entertain audiences. It has won several awards and is known for its engaging storytelling and lively performances.",
+    poster_path:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB69M97uig0LtHZR37cCCEtjHk_m2P6ADznA&s",
+    backdrop_path: "/images/raja.jpg",
+    genres: [
+      { id: 18, name: "Drama" },
+      { id: 36, name: "History" },
+      { id: 10752, name: "War" }, // If political/historical background
+      { id: 99, name: "Documentary" }, // If real-based
+      { id: 35, name: "Comedy" }, // If satirical or stage-play
+    ],
+
+    casts: dummyCastsData,
+    release_date: "2025-04-25",
+    original_language: "entertainment",
+    tagline: "No law. Only disorder.",
+    vote_average: 6.537,
+    vote_count: 35960,
+    runtime: 107,
+  },
 ];
 export const dummyShowData = [
   
@@ -328,15 +352,15 @@ export const dummyDateTimeData = {
 
 
 export const dummyDashboardData = {
-  totalBookings: 14,
-  totalRevenue: 1517,
-  totalUser: 5,
+  totalBookings: 3,
+  totalRevenue: 14200,
+  totalUser: 3,
   activeShows: [
     {
       _id: "68352363e96d99513e4221a4",
       movie: dummyShowsData[0],
-      showDateTime: "2025-06-30T02:30:00.000Z",
-      showPrice: 59,
+      showDateTime: "2025-10-01T02:30:00.000Z",
+      showPrice: 1000,
       occupiedSeats: {
         A1: "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
         B1: "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
@@ -346,15 +370,15 @@ export const dummyDashboardData = {
     {
       _id: "6835238fe96d99513e4221a8",
       movie: dummyShowsData[1],
-      showDateTime: "2025-06-30T15:30:00.000Z",
-      showPrice: 81,
+      showDateTime: "2025-11-01T15:30:00.000Z",
+      showPrice: 500,
       occupiedSeats: {},
     },
     {
       _id: "6835238fe96d99513e4221a9",
       movie: dummyShowsData[2],
       showDateTime: "2025-06-30T03:30:00.000Z",
-      showPrice: 81,
+      showPrice: 3000,
       occupiedSeats: {},
     },
     {
@@ -400,40 +424,40 @@ export const dummyDashboardData = {
 export const dummyBookingData = [
   {
     _id: "68396334fb83252d82e17295",
-    user: { name: "GreatStack" },
+    user: { name: "Saduvindhaya@gmail.com" },
     show: {
       _id: "68352363e96d99513e4221a4",
       movie: dummyShowsData[0],
       showDateTime: "2025-10-01T13:00:00.000Z",
-      showPrice: 59,
+      showPrice: 1000,
     },
-    amount: 98,
+    amount: 5000,
     bookedSeats: ["A2", "A3", "A4", "A5", "A6"],
     isPaid: false,
   },
   {
     _id: "68396334fb83252d82e17295",
-    user: { name: "GreatStack" },
+    user: { name: "madhuamarasekara@gmail.com" },
     show: {
       _id: "68352363e96d99513e4221a4",
       movie: dummyShowsData[2],
       showDateTime: "2025-11-01T13:00:00.000Z",
-      showPrice: 59,
+      showPrice: 3000,
     },
-    amount: 49,
+    amount: 9000,
     bookedSeats: ["B2", "B3", "B4"],
     isPaid: false,
   },
   {
     _id: "68396334fb83252d82e17295",
-    user: { name: "GreatStack" },
+    user: { name: "hasi@gmail.com" },
     show: {
       _id: "68352363e96d99513e4221a4",
       movie: dummyShowsData[3],
       showDateTime: "2025-06-30T15:00:00.000Z",
-      showPrice: 59,
+      showPrice: 200,
     },
-    amount: 147,
+    amount: 200,
     bookedSeats: ["A1"],
     isPaid: false,
   },
