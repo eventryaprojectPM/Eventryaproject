@@ -14,7 +14,7 @@ const ListShows = () => {
       setShows([
         {
           movie: dummyShowsData[0],
-          showDateTime: "2025-10-01T02:30:00.000Z",
+          showDateTime: "2025-10-01T13:00:00.000Z",
           showPrice: 1000,
           occupiedSeats: {
             A2: "user_1",
@@ -25,17 +25,16 @@ const ListShows = () => {
           },
         },
         {
-          movie: dummyShowsData[1],
-          showDateTime: "2025-10-01T04:30:00.000Z",
+          movie: dummyShowsData[3],
+          showDateTime: "2025-10-30T13:00:00.000Z",
           showPrice: 200,
           occupiedSeats: {
             A1: "user_1",
-            
           },
         },
         {
           movie: dummyShowsData[2],
-          showDateTime: "2025-10-02T06:30:00.000Z",
+          showDateTime: "2025-11-01T13:00:00.000Z",
           showPrice: 3000,
           occupiedSeats: {
             B1: "user_1",
@@ -44,20 +43,20 @@ const ListShows = () => {
           },
         },
         {
-          movie: dummyShowsData[3],
-          showDateTime: "2025-10-03T08:30:00.000Z",
+          movie: dummyShowsData[1],
+          showDateTime: "2025-11-30T04:30:00.000Z",
           showPrice: 1000,
           occupiedSeats: {},
         },
         {
           movie: dummyShowsData[4],
-          showDateTime: "2025-10-04T10:30:00.000Z",
+          showDateTime: "2025-12-04T10:30:00.000Z",
           showPrice: 1000,
           occupiedSeats: {},
         },
         {
           movie: dummyShowsData[6],
-          showDateTime: "2025-10-05T12:30:00.000Z",
+          showDateTime: "2025-12-01T04:30:00.000Z",
           showPrice: 1000,
           occupiedSeats: {},
         },
