@@ -125,9 +125,9 @@ export const dummyShowsData = [
     poster_path: "/images/padura.jpg",
     backdrop_path: "/images/padura.jpg",
     genres: [
-      { id: 28, name: "Action" },
-      { id: 14, name: "Fantasy" },
-      { id: 12, name: "Adventure" },
+      { id: 28, name: "Music" },
+      { id: 14, name: "Dancing" },
+      { id: 12, name: "Enjoy" },
     ],
     casts: dummyCastsData,
     release_date: "2025-10-01",
@@ -135,7 +135,7 @@ export const dummyShowsData = [
     tagline: "She seeks the power to free her people.",
     vote_average: 6.4,
     vote_count: 15000,
-    runtime: 102,
+    runtime: 300,
   },
   {
     _id: "1232546",
@@ -146,8 +146,8 @@ export const dummyShowsData = [
     poster_path: "/images/kalawakasha.jpg",
     backdrop_path: "/images/kalawakasha.jpg",
     genres: [
-      { id: 27, name: "Horror" },
-      { id: 9648, name: "Mystery" },
+      { id: 27, name: "Dancing" },
+      { id: 9648, name: "Singing" },
     ],
     casts: dummyCastsData,
     release_date: "2025-04-23",
@@ -155,7 +155,7 @@ export const dummyShowsData = [
     tagline: "Every night a different nightmare.",
     vote_average: 6.405,
     vote_count: 18000,
-    runtime: 103,
+    runtime: 180,
   },
   {
     _id: "552524",
@@ -166,9 +166,9 @@ export const dummyShowsData = [
     poster_path: "/images/Medusa.jpg",
     backdrop_path: "/images/Medusa.jpg",
     genres: [
-      { id: 10751, name: "Family" },
-      { id: 35, name: "Comedy" },
-      { id: 878, name: "Science Fiction" },
+      { id: 28, name: "Music" },
+      { id: 14, name: "Dancing" },
+      { id: 12, name: "Enjoy" },
     ],
     casts: dummyCastsData,
     release_date: "2025-05-17",
@@ -186,10 +186,10 @@ export const dummyShowsData = [
       "Kanimadala is a vibrant cultural event showcasing Sri Lankan traditions through music, dance, and drama. Alongside the performance, a food festival adds a practical hospitality experience, making it both a cultural celebration and an educational project.",
     poster_path: "/images/sahstra.jpg",
     backdrop_path: "/images/sahstra.jpg",
-    genres: [
-      { id: 28, name: "Action" },
-      { id: 80, name: "Crime" },
-      { id: 53, name: "Thriller" },
+   genres: [
+      { id: 28, name: "Fun" },
+      { id: 14, name: "Dancing" },
+      { id: 12, name: "Enjoy" },
     ],
     casts: dummyCastsData,
     release_date: "2025-04-25",
@@ -208,10 +208,9 @@ export const dummyShowsData = [
     poster_path: "/images/kanimadala.jpg",
     backdrop_path: "/images/kanimadala.jpg",
     genres: [
-      { id: 10751, name: "Family" },
-      { id: 35, name: "Comedy" },
-      { id: 12, name: "Adventure" },
-      { id: 14, name: "Fantasy" },
+      { id: 28, name: "Family" },
+      { id: 14, name: "Dancing" },
+      { id: 12, name: "Enjoy" },
     ],
     casts: dummyCastsData,
     release_date: "2025-03-31",
@@ -219,7 +218,7 @@ export const dummyShowsData = [
     tagline: "Be there and be square.",
     vote_average: 6.516,
     vote_count: 15225,
-    runtime: 101,
+    runtime: 180,
   },
 
   {
@@ -231,7 +230,7 @@ export const dummyShowsData = [
     poster_path: "/images/cricket.jpg",
     backdrop_path: "/images/cricket.jpg",
     genres: [
-      { id: 28, name: "Action" },
+      { id: 28, name: "Fun" },
       { id: 12, name: "Adventure" },
       { id: 53, name: "Thriller" },
     ],
@@ -241,7 +240,7 @@ export const dummyShowsData = [
     tagline: "Our lives are the sum of our choices.",
     vote_average: 7.042,
     vote_count: 19885,
-    runtime: 170,
+    runtime: 3600,
   },
   {
     _id: "668490",
@@ -266,7 +265,7 @@ export const dummyShowsData = [
     tagline: "No law. Only disorder.",
     vote_average: 6.537,
     vote_count: 35960,
-    runtime: 107,
+    runtime: 120,
   },
 ];
 export const dummyShowData = [
