@@ -270,7 +270,6 @@ export const dummyShowsData = [
   },
 ];
 export const dummyShowData = [
-  
   {
     _id: "950387",
     id: 950387,
@@ -318,7 +317,7 @@ export const dummyShowData = [
     vote_count: 35960,
     runtime: 107,
   },
- 
+
   {
     _id: "986056",
     id: 986056,
@@ -327,6 +326,48 @@ export const dummyShowData = [
       "APEXPATH'25 is an annual freshers’ welcome event where seniors from various departments host performances, activities, and interactive sessions to warmly integrate new students into the CINEC community.",
     poster_path: "/images/images.jpeg",
     backdrop_path: "/images/images.jpeg",
+    genres: [
+      { id: 28, name: "Action" },
+      { id: 878, name: "Science Fiction" },
+      { id: 12, name: "Adventure" },
+    ],
+    casts: dummyCastsData,
+    release_date: "2025-04-30",
+    original_language: "entertainment",
+    tagline: "Everyone deserves a second shot.",
+    vote_average: 7.443,
+    vote_count: 23569,
+    runtime: 127,
+  },
+  {
+    _id: "986057",
+    id: 986056,
+    title: "Talent Fest'25",
+    overview:
+      "APEXPATH'25 is an annual freshers’ welcome event where seniors from various departments host performances, activities, and interactive sessions to warmly integrate new students into the CINEC community.",
+    poster_path: "/images/talant.jpg",
+    backdrop_path: "/images/talant.jpg",
+    genres: [
+      { id: 28, name: "Action" },
+      { id: 878, name: "Science Fiction" },
+      { id: 12, name: "Adventure" },
+    ],
+    casts: dummyCastsData,
+    release_date: "2025-04-30",
+    original_language: "entertainment",
+    tagline: "Everyone deserves a second shot.",
+    vote_average: 7.443,
+    vote_count: 23569,
+    runtime: 127,
+  },
+  {
+    _id: "986057",
+    id: 986056,
+    title: "Gallentrya",
+    overview:
+      "APEXPATH'25 is an annual freshers’ welcome event where seniors from various departments host performances, activities, and interactive sessions to warmly integrate new students into the CINEC community.",
+    poster_path: "/images/gal.jpg",
+    backdrop_path: "/images/gal.jpg",
     genres: [
       { id: 28, name: "Action" },
       { id: 878, name: "Science Fiction" },
