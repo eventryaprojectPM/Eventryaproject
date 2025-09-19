@@ -13,54 +13,56 @@ const ChatBot = () => {
     {
       question: "How do I book tickets?",
       answer: "Browse events, select seats, and checkout.",
-      keywords: ["book", "ticket", "reserve", "buy"]
+      keywords: ["book", "tickets", "seat", "reservation"],
     },
     {
       question: "What's your contact info?",
-      answer: "Email:- cineceventrya@gmail.com   or  call:- 0112369874.",
-      keywords: ["contact", "email", "phone", "call", "reach"]
+      answer: "Email:- cineceventrya@gmail.com or call:- 0112369874.",
+      keywords: ["contact", "email", "phone", "call"],
     },
     {
       question: "Are my details secure?",
       answer: "Yes, our system is secure.",
-      keywords: ["secure", "safe", "privacy", "details"]
+      keywords: ["secure", "safe", "privacy", "details"],
     },
     {
       question: "Can I cancel tickets?",
       answer: "Check our refund policy or contact support.",
-      keywords: ["cancel", "refund", "return"]
+      keywords: ["cancel", "cancellation", "ticket cancel"],
     },
     {
       question: "How do I get a refund?",
       answer: "Review our refund policy or contact support.",
-      keywords: ["refund", "money back", "return"]
+      keywords: ["refund", "money back"],
     },
     {
       question: "What's the most popular event?",
       answer: "Check our homepage for trending events.",
-      keywords: ["popular", "trending", "best", "event"]
+      keywords: ["popular", "trending", "best event"],
     },
     {
       question: "Can I book seats for multiple people?",
       answer: "Yes, you can book multiple seats during checkout.",
-      keywords: ["multiple", "group", "people", "seats"]
+      keywords: ["multiple", "many", "group booking"],
     },
     {
       question: "How do I know if seats are available?",
       answer: "Check the event page for seat availability.",
-      keywords: ["available", "seats", "vacant"]
+      keywords: ["available", "availability", "free seats"],
     },
     {
       question: "Can I change my ticket details?",
       answer: "Contact support to see if changes are possible.",
-      keywords: ["change", "modify", "edit", "details"]
+      keywords: ["change", "edit", "modify", "ticket details"],
     },
     {
       question: "Do you offer discounts?",
-      answer: "Check our promotions page or contact support for current offers.",
-      keywords: ["discount", "offer", "promo", "deal"]
-    }
+      answer:
+        "Check our promotions page or contact support for current offers.",
+      keywords: ["discount", "offer", "promotion", "deal"],
+    },
   ];
+
 
   const handleSend = () => {
   if (inputValue.trim()) {
