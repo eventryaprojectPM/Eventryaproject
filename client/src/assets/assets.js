@@ -425,7 +425,7 @@ export const dummyDashboardData = {
       _id: "6835238fe96d99513e4221aa",
       movie: dummyShowsData[3],
       showDateTime: "2025-07-15T16:30:00.000Z",
-      showPrice: 81,
+      showPrice: 500,
       occupiedSeats: {
         A1: "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
         A2: "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
@@ -437,7 +437,7 @@ export const dummyDashboardData = {
       _id: "683682072b5989c29fc6dc0d",
       movie: dummyShowsData[4],
       showDateTime: "2025-12-05T15:30:00.000Z",
-      showPrice: 49,
+      showPrice: 400,
       occupiedSeats: {
         A1: "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
         A2: "user_2xO4XPCgWWwWq9EHuQxc5UWqIok",
@@ -452,7 +452,7 @@ export const dummyDashboardData = {
       _id: "68380044686d454f2116b39a",
       movie: dummyShowsData[5],
       showDateTime: "2026-01-20T16:00:00.000Z",
-      showPrice: 79,
+      showPrice: 1000,
       occupiedSeats: {
         A1: "user_2xl7eCSUHddibk5lRxfOtw9RMwX",
         A2: "user_2xl7eCSUHddibk5lRxfOtw9RMwX",
