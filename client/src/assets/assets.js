@@ -125,8 +125,8 @@ export const dummyShowsData = [
     poster_path: "/images/padura.jpg",
     backdrop_path: "/images/padura.jpg",
     genres: [
-      { id: 28, name: "Music" },
-      { id: 14, name: "Dancing" },
+      { id: 28, name: "LKR 1000" },
+      { id: 14, name: "Singing" },
       { id: 12, name: "Enjoy" },
     ],
     casts: dummyCastsData,
@@ -146,7 +146,7 @@ export const dummyShowsData = [
     poster_path: "/images/kalawakasha.jpg",
     backdrop_path: "/images/kalawakasha.jpg",
     genres: [
-      { id: 27, name: "Dancing" },
+      { id: 27, name: "LKR 1000" },
       { id: 9648, name: "Singing" },
     ],
     casts: dummyCastsData,
@@ -166,9 +166,9 @@ export const dummyShowsData = [
     poster_path: "/images/Medusa.jpg",
     backdrop_path: "/images/Medusa.jpg",
     genres: [
-      { id: 28, name: "Music" },
-      { id: 14, name: "Dancing" },
-      { id: 12, name: "Enjoy" },
+      { id: 28, name: "LKR 3000" },
+      { id: 14, name: "Enjoy" },
+      { id: 12, name: "Dancing" },
     ],
     casts: dummyCastsData,
     release_date: "2025-05-17",
@@ -186,8 +186,8 @@ export const dummyShowsData = [
       "Kanimadala is a vibrant cultural event showcasing Sri Lankan traditions through music, dance, and drama. Alongside the performance, a food festival adds a practical hospitality experience, making it both a cultural celebration and an educational project.",
     poster_path: "/images/sahstra.jpg",
     backdrop_path: "/images/sahstra.jpg",
-   genres: [
-      { id: 28, name: "Fun" },
+    genres: [
+      { id: 28, name: "LKR 500" },
       { id: 14, name: "Dancing" },
       { id: 12, name: "Enjoy" },
     ],
@@ -208,7 +208,7 @@ export const dummyShowsData = [
     poster_path: "/images/kanimadala.jpg",
     backdrop_path: "/images/kanimadala.jpg",
     genres: [
-      { id: 28, name: "Family" },
+      { id: 28, name: "LKR 400" },
       { id: 14, name: "Dancing" },
       { id: 12, name: "Enjoy" },
     ],
@@ -230,7 +230,7 @@ export const dummyShowsData = [
     poster_path: "/images/cricket.jpg",
     backdrop_path: "/images/cricket.jpg",
     genres: [
-      { id: 28, name: "Fun" },
+      { id: 28, name: "LKR 1000" },
       { id: 12, name: "Adventure" },
       { id: 53, name: "Thriller" },
     ],
@@ -252,7 +252,7 @@ export const dummyShowsData = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB69M97uig0LtHZR37cCCEtjHk_m2P6ADznA&s",
     backdrop_path: "/images/raja.jpg",
     genres: [
-      { id: 18, name: "Drama" },
+      { id: 18, name: "LKR 500" },
       { id: 36, name: "History" },
       { id: 10752, name: "War" }, // If political/historical background
       { id: 99, name: "Documentary" }, // If real-based

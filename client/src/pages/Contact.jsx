@@ -11,55 +11,46 @@ const ChatBot = () => {
    // Enhanced FAQ with better matching keywords
   const faq = [
     {
-      question: "How do I book tickets?",
-      answer: "Browse events, select seats, and checkout.",
-      keywords: ["book", "tickets", "seat", "reservation"],
+      question: "Hi",
+      answer: "Hello! How can I help you today?",
+      keywords: ["hi"],
     },
     {
       question: "What's your contact info?",
       answer: "Email:- cineceventrya@gmail.com or call:- 0112369874.",
-      keywords: ["contact", "email", "phone", "call"],
-    },
-    {
-      question: "Are my details secure?",
-      answer: "Yes, our system is secure.",
-      keywords: ["secure", "safe", "privacy", "details"],
+      keywords: ["contact"],
     },
     {
       question: "Can I cancel tickets?",
       answer: "Check our refund policy or contact support.",
-      keywords: ["cancel", "cancellation", "ticket cancel"],
+      keywords: ["cancel"],
     },
     {
       question: "How do I get a refund?",
       answer: "Review our refund policy or contact support.",
-      keywords: ["refund", "money back"],
+      keywords: ["refund"],
+    },
+    {
+      question: "Do you have parking?",
+      answer: "Yes, we provide free parking for all visitors.",
+      keywords: ["parking"],
     },
     {
       question: "What's the most popular event?",
       answer: "Check our homepage for trending events.",
-      keywords: ["popular", "trending", "best event"],
+      keywords: ["popular"],
     },
-    {
-      question: "Can I book seats for multiple people?",
-      answer: "Yes, you can book multiple seats during checkout.",
-      keywords: ["multiple", "many", "group booking"],
-    },
-    {
-      question: "How do I know if seats are available?",
-      answer: "Check the event page for seat availability.",
-      keywords: ["available", "availability", "free seats"],
-    },
+
     {
       question: "Can I change my ticket details?",
       answer: "Contact support to see if changes are possible.",
-      keywords: ["change", "edit", "modify", "ticket details"],
+      keywords: ["change"],
     },
+
     {
-      question: "Do you offer discounts?",
-      answer:
-        "Check our promotions page or contact support for current offers.",
-      keywords: ["discount", "offer", "promotion", "deal"],
+      question: "Thank you",
+      answer: "You're welcome! Enjoy your event 🎉",
+      keywords: ["thanks"],
     },
   ];
 
